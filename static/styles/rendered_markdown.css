@@ -312,11 +312,14 @@
         width: 150px;
         display: inline-block !important;
         border: none !important;
+        background: hsla(0, 0%, 0%, 0.1);
+        border-radius: 3px;
 
         a {
-            position: absolute;
+            display: block;
             height: 100%;
             width: 100%;
+            border-radius: inherit;
         }
     }
 
@@ -359,9 +362,10 @@
     .message_inline_ref img {
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        object-fit: scale-down;
         float: left;
         margin-right: 10px;
+        border-radius: inherit;
     }
 
     .message_inline_image img {
